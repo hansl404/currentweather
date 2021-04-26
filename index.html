@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body">
+
+    <h1 class="heading">Current Weather</h1>
+    <p id="cityposition"></p>
+
+    <div id="grid">
+
+        <div id="front">
+            <div>
+                <h2 id="cityname">Getting Current Location...</h2>
+                <h2 id="temp"></h2>
+                <img id="icon" src="loading..."/ alt="loading...">
+                <h2 id="desc"></h2>
+            </div>
+        </div>
+
+        <div class="miscinfocard">
+            <h2>Misc Data</h2>
+            <hr>
+            <h2 id="tempfeelslike"></h2>
+            <h2 id="humidity"></h2>
+            <h2 id="pressure"></h2>
+            <h2 id="cloudiness"></h2>
+            <h2 id="sunrise"></h2>
+            <h2 id="sunset"></h2>
+        </div>
+
+        <div class="windcard">
+
+            <h2>Wind Data</h2>
+            <hr>
+
+            <div class="windcontent">
+                <div class="windnumbers">
+                    <h2 id="windspeed"></h2>
+                    <h2 id="winddirection"></h2>
+                </div>
+                <div class="windsymbols">
+                    <h2 id="compass">N</h2>
+                    <h2 id="windarrow">&#10147;</h2>
+                </div>
+            </div> 
+
+        </div>
+
+
+    </div>
+
+    <div id="bottomcard">
+        <h3>Data from OpenWeatherMap</h3>
+        <h3 id="datatime"></h3>
+    </div>
+
+
+    <script type='text/javascript' src='config.js'></script>
+    <script src="weather.js"></script>
+
+</body>
+</html>
