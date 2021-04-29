@@ -75,9 +75,11 @@ const successLocation = position => {
         const sunsettime = new Date(sunsets * 1000);
 
         const sunrisehours = sunrisetime.getHours();
-        const sunrisemin = sunrisetime.getMinutes();
+        let sunrisemin = sunrisetime.getMinutes();
+        if (sunrisemin < 10) {sunrisemin = "0"+sunrisemin;}
         const sunsethours = sunsettime.getHours();
-        const sunsetmin = sunsettime.getMinutes();
+        let sunsetmin = sunsettime.getMinutes();
+        if (sunsetmin < 10) {sunsetmin = "0"+sunsetmin;}
 
         sunrise.innerHTML = "Sunrise: " + sunrisehours + ":" + sunrisemin
         sunset.innerHTML = "Sunset: " + sunsethours + ":" + sunsetmin
