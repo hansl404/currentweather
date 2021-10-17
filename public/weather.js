@@ -1,3 +1,4 @@
+// will need to manually put in api key for now
 const apikey = config.API_KEY;
 
 const icon = document.getElementById('icon');
